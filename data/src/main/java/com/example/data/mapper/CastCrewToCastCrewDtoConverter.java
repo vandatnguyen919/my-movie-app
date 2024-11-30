@@ -5,8 +5,6 @@ import androidx.annotation.NonNull;
 import com.example.data.source.remote.model.CastCrew;
 import com.example.domain.model.CastCrewDto;
 
-import java.io.IOException;
-
 import retrofit2.Converter;
 
 public class CastCrewToCastCrewDtoConverter implements Converter<CastCrew, CastCrewDto> {

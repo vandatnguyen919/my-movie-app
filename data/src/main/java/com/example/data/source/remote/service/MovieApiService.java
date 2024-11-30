@@ -5,7 +5,6 @@ import com.example.data.source.remote.model.Movie;
 import com.example.data.source.remote.model.MovieResponse;
 
 import io.reactivex.rxjava3.core.Single;
-import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;

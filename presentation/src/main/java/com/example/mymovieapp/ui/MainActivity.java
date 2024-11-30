@@ -5,9 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.splashscreen.SplashScreen;
 
-import com.example.mymovieapp.R;
 import com.example.mymovieapp.databinding.ActivityMainBinding;
-import com.google.firebase.FirebaseApp;
 
 public class MainActivity extends AppCompatActivity {
 

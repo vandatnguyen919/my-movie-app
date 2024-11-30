@@ -5,11 +5,7 @@ import android.provider.Settings;
 
 import com.example.domain.model.UserProfileDto;
 import com.example.domain.repository.UserProfileRepository;
-import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.UUID;
 
 import javax.inject.Inject;
 

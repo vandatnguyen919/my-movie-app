@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.domain.model.CastCrewDto;
 import com.example.mymovieapp.databinding.CastCrewListItemBinding;
 
-import java.util.Collections;
 import java.util.List;
 
 public class CastCrewListAdapter extends RecyclerView.Adapter<CastCrewListAdapter.ViewHolder> {

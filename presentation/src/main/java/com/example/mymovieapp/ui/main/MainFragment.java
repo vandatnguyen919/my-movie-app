@@ -17,7 +17,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -35,7 +34,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.domain.model.MovieDto;
-import com.example.domain.utils.Constants;
 import com.example.mymovieapp.R;
 import com.example.mymovieapp.databinding.FragmentMainBinding;
 import com.example.mymovieapp.di.MyApplication;

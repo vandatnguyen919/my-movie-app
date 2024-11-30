@@ -14,7 +14,6 @@ import androidx.core.app.NotificationCompat;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
-import com.example.domain.model.MovieDto;
 import com.example.mymovieapp.R;
 import com.example.mymovieapp.di.MyApplication;
 import com.example.mymovieapp.ui.MainActivity;

@@ -5,7 +5,6 @@ import androidx.paging.PagingData;
 import com.example.domain.model.MovieDto;
 
 import java.util.List;
-import java.util.Map;
 
 import io.reactivex.rxjava3.core.Completable;
 import io.reactivex.rxjava3.core.Flowable;

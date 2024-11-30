@@ -4,9 +4,7 @@ import com.example.data.mapper.MovieToMovieDtoConverter;
 import com.example.data.mapper.ReminderEntityToReminderDtoConverter;
 import com.example.data.source.local.dao.ReminderDao;
 import com.example.data.source.local.entity.ReminderEntity;
-import com.example.data.source.remote.model.Movie;
 import com.example.data.source.remote.service.MovieApiService;
-import com.example.domain.model.MovieDto;
 import com.example.domain.model.ReminderDto;
 import com.example.domain.repository.ReminderRepository;
 

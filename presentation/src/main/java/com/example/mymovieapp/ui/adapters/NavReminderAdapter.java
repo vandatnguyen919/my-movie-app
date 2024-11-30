@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.domain.model.ReminderDto;
 import com.example.mymovieapp.databinding.NavReminderListItemBinding;
-import com.example.mymovieapp.databinding.ReminderListItemBinding;
 
 public class NavReminderAdapter extends ListAdapter<ReminderDto, NavReminderAdapter.ReminderViewHolder> {
 

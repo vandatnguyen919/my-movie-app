@@ -7,8 +7,6 @@ import com.example.domain.model.MovieDto;
 import com.example.domain.repository.MovieRepository;
 import com.example.domain.usecase.base.FlowableUseCase;
 
-import java.util.Map;
-
 import javax.inject.Inject;
 
 import io.reactivex.rxjava3.core.Flowable;

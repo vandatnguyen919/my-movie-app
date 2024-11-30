@@ -1,19 +1,10 @@
 package com.example.data.repository;
 
-import static com.example.domain.utils.Constants.*;
-
-import android.app.Application;
-import android.content.Context;
-import android.content.SharedPreferences;
-
-import androidx.annotation.NonNull;
 import androidx.paging.Pager;
 import androidx.paging.PagingConfig;
 import androidx.paging.PagingData;
 import androidx.paging.PagingDataTransforms;
 import androidx.paging.rxjava3.PagingRx;
-import androidx.preference.PreferenceManager;
-
 
 import com.example.data.mapper.MovieDtoToMovieEntityConverter;
 import com.example.data.mapper.MovieEntityToMovieDtoConverter;
@@ -26,8 +17,6 @@ import com.example.domain.model.MovieDto;
 import com.example.domain.repository.MovieRepository;
 
 import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 

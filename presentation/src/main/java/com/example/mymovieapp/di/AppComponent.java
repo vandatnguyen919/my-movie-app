@@ -2,8 +2,8 @@ package com.example.mymovieapp.di;
 
 import android.app.Application;
 
-import com.example.mymovieapp.ui.main.MainFragment;
 import com.example.mymovieapp.ui.favorites.FavoriteMovieListFragment;
+import com.example.mymovieapp.ui.main.MainFragment;
 import com.example.mymovieapp.ui.movies.MovieContainerFragment;
 import com.example.mymovieapp.ui.movies.details.MovieDetailsFragment;
 import com.example.mymovieapp.ui.movies.list.MovieListFragment;
