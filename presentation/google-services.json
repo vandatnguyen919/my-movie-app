@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "466432099947",
+    "firebase_url": "https://my-movie-app-eb5cc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "my-movie-app-eb5cc",
+    "storage_bucket": "my-movie-app-eb5cc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466432099947:android:d4e00b2ccfaa99e4ced32e",
+        "android_client_info": {
+          "package_name": "com.example.data"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdEkNDJeWLDn5Vu-B8OC6G3zwwpaKtoBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466432099947:android:45fbf17b61cc08f0ced32e",
+        "android_client_info": {
+          "package_name": "com.example.mymovieapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdEkNDJeWLDn5Vu-B8OC6G3zwwpaKtoBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<resources>
+    <!-- Category Preference -->
+    <string-array name="category_entries">
+        <item>Popular</item>
+        <item>Top Rated</item>
+        <item>Upcoming</item>
+        <item>Now Playing</item>
+    </string-array>
+
+    <string-array name="category_values">
+        <item>popular</item>
+        <item>top_rated</item>
+        <item>upcoming</item>
+        <item>now_playing</item>
+    </string-array>
+
+    <!-- Sort Preference -->
+    <string-array name="sort_entries">
+        <item>Release Year</item>
+        <item>Rating</item>
+    </string-array>
+
+    <string-array name="sort_values">
+        <item>release_year</item>
+        <item>rating</item>
+    </string-array>
+</resources>
