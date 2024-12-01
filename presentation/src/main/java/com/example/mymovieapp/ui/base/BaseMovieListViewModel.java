@@ -87,16 +87,11 @@ public class BaseMovieListViewModel extends AndroidViewModel {
     }
 
     public void updateFavoriteMovie(MovieDto movieDto) {
-        mFavoriteMovieUseCase.isFavorite(movieDto.getId(),
-                isFavorite -> {
-                    if (isFavorite) {
-                        deleteMovieFromFavorite(movieDto);
-                    } else {
-                        addMovieToFavorite(movieDto);
-                    }
-                },
-                throwable -> Log.d("MovieListViewModel", "updateFavoriteMovie: " + throwable.getMessage())
-        );
+        if (movieDto.isFavorite()) {
+            deleteMovieFromFavorite(movieDto);
+        } else {
+            addMovieToFavorite(movieDto);
+        }
     }
 
     private void addMovieToFavorite(MovieDto movieDto) {

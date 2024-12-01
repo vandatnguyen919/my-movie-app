@@ -147,7 +147,6 @@ public class MovieDetailsFragment extends Fragment {
                                 calendar.set(year, month, dayOfMonth, hourOfDay, minute, 0);
                                 long reminderTimestamp = calendar.getTimeInMillis();
 
-
                                 long delay = reminderTimestamp - System.currentTimeMillis();
                                 if (delay > 0) {
                                     mReminderListViewModel.saveReminder(mMovieDto.getId(), reminderTimestamp);
@@ -165,6 +164,7 @@ public class MovieDetailsFragment extends Fragment {
                                             .setInputData(data)
                                             .addTag(String.valueOf(mMovieDto.getId()))
                                             .build();
+
                                     WorkManager.getInstance(requireContext()).cancelAllWorkByTag(String.valueOf(mMovieDto.getId()));
                                     WorkManager.getInstance(requireContext()).enqueue(notificationWorkRequest);
                                 } else {
