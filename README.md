@@ -1,4 +1,4 @@
-<h1 align="center">MyMovie App</h1>
+<h1 align="center">MyMovieApp</h1>
 
 <p align="center">
 MyMovieApp is a sample Android project using <a href="https://www.themoviedb.org/">The Movie DB</a> API based on MVVM architecture. It showcases the latest Android tech stacks with well-designed architecture and best practices.
@@ -8,15 +8,12 @@ MyMovieApp is a sample Android project using <a href="https://www.themoviedb.org
 </p>
 
 ## Features
-* 100% Kotlin
+* 100% Java
 * MVVM architecture
 * Reactive pattern
 * Android Architecture Components and Jetpack Compose.
-* Kotlin Coroutines + Flow (Upcoming)
 * Single activity pattern
 * Dependency injection
-* CI support (Upcoming)
-* Testing (Upcoming)
 
 <img src="./art/img_4.png" align="right" width="32%"/>
 
@@ -38,7 +35,7 @@ MyMovieApp is a sample Android project using <a href="https://www.themoviedb.org
 
 ![MVVM](./art/MyMovieApp_Architecture.png)
 
-We follow Google recommended [Guide to app architecture](https://developer.android.com/jetpack/guide) to structure our architecture based on MVVM, reactive UI using LiveData / RxJava observables and data binding.
+I follow Google recommended [Guide to app architecture](https://developer.android.com/jetpack/guide) to structure our architecture based on MVVM, reactive UI using LiveData / RxJava observables and data binding.
 
 * **View**: Activity/Fragment with UI-specific logics only.
 * **ViewModel**: It keeps the logic away from View layer, provides data streams for UI and handle user interactions.
