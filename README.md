@@ -18,7 +18,7 @@ MyMovieApp is a sample Android project using <a href="https://www.themoviedb.org
 * CI support (Upcoming)
 * Testing (Upcoming)
 
-<img src="./art/img_4.png" align="right" width="720"/>
+<img src="./art/img_4.png" align="right" width="32%"/>
 
 ## Tech Stacks
 * [Retrofit](http://square.github.io/retrofit/) + [OkHttp](http://square.github.io/okhttp/) - RESTful API and networking client.
