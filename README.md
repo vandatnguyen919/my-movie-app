@@ -11,16 +11,16 @@ MyMovieApp is a sample Android project using <a href="https://www.themoviedb.org
 * 100% Java
 * MVVM architecture
 * Reactive pattern
-* Android Architecture Components and Jetpack Compose.
+* Android Architecture Components and Jetpack Library.
 * Single activity pattern
 * Dependency injection
 
-<img src="./art/img_4.png" align="right" width="32%"/>
+<img src="./art/img_4.png" align="right" width="32%" alt=""/>
 
 ## Tech Stacks
 * [Retrofit](http://square.github.io/retrofit/) + [OkHttp](http://square.github.io/okhttp/) - RESTful API and networking client.
 * [Dagger](https://github.com/google/dagger) - Dependency injection.
-* [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - A collections of libraries that help you design rebust, testable and maintainable apps.
+* [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - A collections of libraries that help you design robust, testable and maintainable apps.
     * [Room](https://developer.android.com/training/data-storage/room) - Local persistence database.
     * [Paging 3](https://developer.android.com/topic/libraries/architecture/paging/v3-overview) - Pagination loading for RecyclerView.
     * [ViewModel](https://developer.android.com/reference/androidx/lifecycle/ViewModel) - UI related data holder, lifecycle aware.
@@ -30,6 +30,7 @@ MyMovieApp is a sample Android project using <a href="https://www.themoviedb.org
     * [WorkManager](https://developer.android.com/topic/libraries/architecture/workmanager) - Tasks scheduler in background jobs. (Upcoming)
 * [RxJava](https://github.com/ReactiveX/RxJava) - Asynchronous programming with observable streams.
 * [Glide](https://github.com/bumptech/glide) - Image loading.
+* [Firebase](https://firebase.google.com/) - Backend services and storage for mobile apps.
 
 ## Architectures
 
@@ -44,28 +45,50 @@ I follow Google recommended [Guide to app architecture](https://developer.androi
 ## Package Structures
 
 ```
-com.enginebai.moviehunt # Root Package
-├── data                # For data modeling layer
-│   ├── local           # Local persistence database
-|   │   ├── dao         # Data Access Object for Room
-|   |   ├── model       # Model classes
-│   ├── remote          # Remote data source
-│   └── repo            # Repositories for single source of data
-|
-├── di                  # Dependency injection modules
-│
-├── ui                  # Fragment / View layer
-│   ├── list            # List screen Fragment and ViewModel
-│   ├── home            # Main screen Fragment and ViewModel
-|   │   ├── controller  # Epoxy controller for RecyclerView
-|   │   └── models      # Epoxy models for RecyclerView
-│   └── details         # Detail screen Fragment and ViewModel
-|
-├── utils               # Utility Classes / Kotlin extensions
-├── MainActivity        # Single activity
-├── AppContext          # Application
-└── NavigationRouter    # Navigation controller
+Data Module:
+com.example.data
+├── mapper
+├── repository
+└── source
+    ├── local
+    │   ├── dao
+    │   └── entity
+    └── remote
+        ├── model
+        ├── paging
+        └── service
+```
 
+```
+Domain Module:
+com.example.domain
+├── model
+├── repository
+├── usecase
+│  └── base
+└── utils
+```
+
+```
+Presentation Module:
+com.example.mymovieapp
+├── di
+├── listener
+├── ui
+│   ├── about
+│   ├── adapters
+│   ├── base
+│   ├── favorites
+│   ├── main
+│   ├── movies
+│   │   ├── details
+│   │   └── list
+│   ├── profile
+│   ├── reminder
+│   ├── settings
+│   └── MainActivity
+├── utils
+└── workers
 ```
 
 ## LICENSE
