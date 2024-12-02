@@ -44,51 +44,51 @@ I follow Google recommended [Guide to app architecture](https://developer.androi
 
 ## Package Structures
 
+Data Module: Data modeling and access layer
 ```
-Data Module:
-com.example.data
-├── mapper
-├── repository
-└── source
-    ├── local
-    │   ├── dao
-    │   └── entity
-    └── remote
-        ├── model
-        ├── paging
-        └── service
-```
-
-```
-Domain Module:
-com.example.domain
-├── model
-├── repository
-├── usecase
-│  └── base
-└── utils
+com.example.data        # Root Package
+├── mapper              # Convert data between data layer and domain layer.
+├── repository          # Repository pattern combining local and remote data.
+└── source              # Data source for local and remote.
+    ├── local           # Local persistence database
+    │   ├── dao         # Data Access Objects for Room database
+    │   └── entity      # Entity classes for Room database tables
+    └── remote          # Remote data source
+        ├── model       # Data models for network responses
+        ├── paging      # Paging sources for large data sets
+        └── service     # Retrofit services for API calls
 ```
 
+Domain Module: Core business logic and use cases
 ```
-Presentation Module:
-com.example.mymovieapp
-├── di
-├── listener
-├── ui
-│   ├── about
-│   ├── adapters
-│   ├── base
-│   ├── favorites
-│   ├── main
-│   ├── movies
-│   │   ├── details
-│   │   └── list
-│   ├── profile
-│   ├── reminder
-│   ├── settings
-│   └── MainActivity
-├── utils
-└── workers
+com.example.domain      # Root Package
+├── model               # Business models used across the app
+├── repository          # Interfaces for repository implementations
+├── usecase             # Use cases for handling business logic
+│  └── base             # Base use cases for common logic
+└── utils               # Utility classes for domain-specific operations
+```
+
+Presentation Module: User interface and ViewModel layer
+```
+com.example.mymovieapp  # Root Package
+├── di                  # Dependency injection setup using Dagger
+├── listener            # Interface callbacks for UI interactions
+├── ui                  # User interface screens and components
+│   ├── about           # About screen UI
+│   ├── adapters        # Adapters for RecyclerViews and other lists
+│   ├── base            # Base classes for common UI logic like movies and favorites list fragments
+│   ├── favorites       # Favorites screen UI
+│   ├── main            # Main navigation and layout
+│   ├── movies          # Movie-related UI components
+│   │   ├── details     # Details screen for movies
+│   │   └── list        # List screen for movies
+│   ├── profile         # Profile screen UI
+│   ├── reminder        # Reminder management UI
+│   ├── settings        # Settings screen UI
+│   └── MainActivity    # Single activity hosting fragments
+├── utils               # Utility classes for presentation-specific operations
+└── workers             # Background tasks and WorkManager workers
 ```
 
 ## LICENSE
